@@ -1,0 +1,43 @@
+{
+  "name": "grunt-changes",
+  "description": "Filter the changed files to a specify directory.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/catnofish/grunt-changes",
+  "author": {
+    "name": "Herk Lee",
+    "email": "heke.job@gmail.com",
+    "url": "http://www.herk.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/catnofish/grunt-changes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catnofish/grunt-changes/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/catnofish/grunt-changes/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
