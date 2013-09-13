@@ -34,7 +34,7 @@ Type: `String` Default `.hash`
 The file path to save the hashmap.
 
 #### changes
-Type: `String` Default ``
+Type: `String` Default `changes/`
 
 The direction to copy changed files to.
 Subdirectories will be a copy of `target.src` by default. Use cwd to get a relative dest if needed.
