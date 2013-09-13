@@ -27,7 +27,6 @@ module.exports = function (grunt) {
 
 
 		// Iterate over all specified file groups.
-		console.log(this)
 		this.files.forEach(function (f) {
 			f.src.filter(function (filepath) { // Ignore dirs
 				return !grunt.file.isDir(filepath);
