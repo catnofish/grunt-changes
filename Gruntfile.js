@@ -30,17 +30,15 @@ module.exports = function (grunt) {
 
 		// Configuration to be run (and then tested).
 		changes: {
-//			options: {
-//				hashmap: 'path/to/hashmap',
-//				temp: 'path/to/tempHashmap'
-//			},
-			files: [
-				{
-					expand: true,
-					cwd: 'release/',
-					src: ['js/**']
-				}
-			]
+			options: {
+				hashmap: 'test/.hash',
+				changes: 'upload/'
+			},
+			files: {
+				expand: true,
+				cwd: 'test/',
+				src: ['*/**']
+			}
 		},
 
 		// Unit tests.
@@ -54,9 +52,9 @@ module.exports = function (grunt) {
 	grunt.loadTasks('tasks');
 
 	// These plugins provide necessary tasks.
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-nodeunit');
+//	grunt.loadNpmTasks('grunt-contrib-jshint');
+//	grunt.loadNpmTasks('grunt-contrib-clean');
+//	grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
 	// Whenever the "test" task is run, first clean the "tmp" dir, then run this
 	// plugin's task(s), then test the result.
