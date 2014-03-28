@@ -33,24 +33,21 @@ Type: `String` Default `.hash`
 
 The file path to save the hashmap.
 
-#### changes
-Type: `String` Default `changes/`
-
-The direction to copy changed files to.
-Subdirectories will be a copy of `target.src` by default. Use cwd to get a relative dest if needed.
 
 ### Usage Examples
 
 ```js
 changes: {
-  options: {
-	hashmap: 'test/.hash',
-	changes: 'upload/'
-  },
-  files: {
-	expand: true,
-	cwd: 'test/',
-	src: ['*/**']
+  taskname: {
+	options: {
+		hashmap: 'test/.hash'
+	  },
+	  files: [{
+		expand: true,
+		cwd: 'test/',
+		src: ['dir1/**.*', 'dir2/**.*'],
+		dest: 'upload/'
+	  }]
   }
 }
 ```

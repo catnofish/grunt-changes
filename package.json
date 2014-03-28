@@ -1,7 +1,7 @@
 {
   "name": "grunt-changes",
   "description": "Filter the changed files to a specify directory.",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "homepage": "https://github.com/catnofish/grunt-changes",
   "author": {
     "name": "Herk Lee",
